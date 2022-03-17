@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgb(205, 217, 255), rgb(123, 93, 194));
+  background-size: 1200px 1200px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav_menu {
+  display: inline-block;
+  position: relative;
+  left: 45%;
+  margin: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.nav_menu a {
+  display: inline-block;
+  color: #161616;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 650;
+  width: 50;
+  margin-inline: 2vh;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav_menu a:hover {
+  color: #f0592c;
+}
+
+/* INDEX */
+.cards {
+  margin: 20%;
+  margin-top: 1em;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 50% 50% 50%;
+  column-gap: 5%;
+}
+
+.news-card {
+  margin: 0.5rem;
+  position: relative;
+  height: 12rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  min-width: 50px;
+  transition: boxshadow 0.5s;
+}
+.news-card:hover {
+  box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.171);
+}
+
+.news-card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(192, 56, 56, 0)
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 80%);
+}
+
+.news-card_link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.news-card_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.news-card_text {
+  position: absolute;
+  bottom: 0rem;
+  padding: 1rem;
+  color: white;
+  transition: background-color 1.5s ease;
+}
+
+.news-card_title {
+  transition: color 1s ease;
+  margin-bottom: 0.5rem;
+}
+.news-card_date {
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+/* CATALOGO */
+.producto {
+  width: 95%;
+  height: 90%;
+  margin: 20px auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 17em 17em 17em 17em;
+  row-gap: 5%;
+  column-gap: 2%;
+}
+
+.producto-hijo {
+  width: 17em;
+  height: 17em;
+  background-color: antiquewhite;
+  overflow: hidden;
+  border-radius: 1rem;
+  transition: boxshadow 0.5s;
+}
+.producto-hijo:hover {
+  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.356);
+}
+.producto-hijo .contenedor {
+  width: 100%;
+  height: 100%;
+}
+.producto-hijo .foto {
+  height: 80%;
+  width: 100%;
+  background: url(Imagenes/budin.png) no-repeat center center;
+  background-size: 110%;
+}
+.producto-hijo .contenedor .boton {
+  width: 200%;
+  height: 20%;
+  transition: transform 0.2s;
+}
+.producto-hijo .contenedor .boton h3 {
+  margin: 1%;
+}
+.producto-hijo .contenedor .boton .left {
+  height: 100%;
+  width: 50%;
+  background-color: #ffff;
+  position: relative;
+  text-align: center;
+}
+.producto-hijo .contenedor .boton .left .detalle {
+  padding: 1%;
+  float: left;
+  width: calc(70% - 40px);
+}
+.producto-hijo .contenedor .boton .left .compra {
+  float: right;
+  height: 100%;
+  background-color: #f1f1f1;
+  border-left: solid thin #0000 0.1;
+}
+.producto-hijo .contenedor .boton .left .compra i {
+  font-size: 50px;
+  padding: 30px;
+  color: black;
+  transition: transform 0.8s;
+}
+.producto-hijo .contenedor .boton .left .compra:hover {
+  background: rgb(166, 235, 152);
+}
+footer {
+  text-align: center;
+  size: 50em;
+}
+
+/* MEDIA */
+@media screen and (max-width: 992px) {
+  .cards {
+    margin: 40%;
+    margin-top: 0.5em;
+    grid-template-columns: 15em 15em 15em;
+    column-gap: 10%;
+  }
+  .news-card {
+    min-width: 50px;
+    height: 13rem;
+  }
+  .news-card_title {
+    font-size: 1.2em;
+    margin-block-end: 0.2em;
+  }
+  .news-card_date {
+    font-size: 0.8rem;
+    margin-block-end: 0.1em;
+  }
+  .producto {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 10em);
+    row-gap: 7%;
+  }
+  .producto-hijo {
+    width: 100%;
+    height: 100%;
+  }
+  .producto-hijo .foto {
+    height: 70%;
+    background-size: 110%;
+  }
+  .producto-hijo .contenedor .boton .left {
+    height: 250%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav_menu a {
+    font-size: 1em;
+    margin-inline: 1vh;
+  }
+  .cards {
+    margin: 40%;
+    margin-top: 0.5em;
+    grid-template-columns: 12em 12em 12em;
+    column-gap: 10%;
+  }
+  .news-card {
+    min-width: 50px;
+    height: 12rem;
+  }
+  .news-card_title {
+    font-size: 1em;
+    margin-block-end: 0.2em;
+  }
+  .news-card_date {
+    font-size: 0.5rem;
+    margin-block-end: 0.1em;
+  }
+  .producto {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 10em);
+    row-gap: 7%;
+  }
+  .producto-hijo {
+    width: 100%;
+    height: 100%;
+  }
+  .producto-hijo .foto {
+    height: 70%;
+    background-size: 110%;
+  }
+  .producto-hijo .contenedor .boton .left {
+    height: 250%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav_menu a {
+    font-size: 0.9em;
+    margin-inline: 0.8vh;
+  }
+  .cards {
+    margin: 40%;
+    margin-top: 0.5em;
+    grid-template-columns: 8em 8em 8em;
+    column-gap: 5%;
+  }
+  .news-card {
+    min-width: 50px;
+    height: 8rem;
+  }
+  .news-card_title {
+    font-size: 0.8em;
+    margin-block-end: 0.2em;
+  }
+  .news-card_date {
+    font-size: 0.5rem;
+    margin-block-end: 0.1em;
+  }
+  .producto {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 7em);
+    row-gap: 5%;
+  }
+
+  .producto-hijo {
+    width: 100%;
+    height: 7em;
+  }
+  .producto-hijo .foto {
+    height: 50%;
+    background-size: 100%;
+  }
+  .producto-hijo .contenedor .boton .left {
+    height: 250%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .nav_menu {
+    left: 45%;
+    margin: 5%;
+    transform: translate(-55%, -50%);
+  }
+  .nav_menu a {
+    font-size: 0.6em;
+    margin-inline: 0.5vh;
+  }
+  .cards {
+    margin: 10%;
+    margin-top: 0.5em;
+    grid-template-columns: 6.5em 6.5em 6.5em;
+    column-gap: 1%;
+  }
+  .news-card {
+    min-width: 50px;
+    height: 10rem;
+  }
+  .news-card_title {
+    font-size: 0.8em;
+    margin-block-end: 0.2em;
+  }
+
+  .news-card_date {
+    font-size: 0.5rem;
+    margin-block-end: 0.1em;
+  }
+  .producto {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 7em);
+    row-gap: 1%;
+  }
+
+  .producto-hijo {
+    width: 100%;
+    height: 7em;
+  }
+  .producto-hijo .foto {
+    height: 50%;
+    background-size: 100%;
+  }
+  .producto-hijo .contenedor .boton .left {
+    height: 250%;
+  }
+}
