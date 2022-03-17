@@ -7,7 +7,8 @@
 
 body {
   background: linear-gradient(rgb(205, 217, 255), rgb(123, 93, 194));
-  background-size: 1200px 1200px;
+  background-size: 100vh;
+  position: relative;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -103,8 +104,8 @@ body {
 /* CATALOGO */
 .producto {
   width: 95%;
-  height: 90%;
-  margin: 20px auto;
+  height: 100vh;
+  margin: 2 auto;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -137,10 +138,12 @@ body {
 .producto-hijo .contenedor .boton {
   width: 200%;
   height: 20%;
+  font-size: 1em;
   transition: transform 0.2s;
 }
 .producto-hijo .contenedor .boton h3 {
   margin: 1%;
+  font-size: 1.1em;
 }
 .producto-hijo .contenedor .boton .left {
   height: 100%;
@@ -161,7 +164,7 @@ body {
   border-left: solid thin #0000 0.1;
 }
 .producto-hijo .contenedor .boton .left .compra i {
-  font-size: 50px;
+  font-size: 40px;
   padding: 30px;
   color: black;
   transition: transform 0.8s;
@@ -169,9 +172,95 @@ body {
 .producto-hijo .contenedor .boton .left .compra:hover {
   background: rgb(166, 235, 152);
 }
-footer {
+
+/* FOOTER */
+.footer {
+  padding: 50px 0;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  color: #ffffff;
+  background-color: #452b6a;
+}
+
+.footer h3 {
+  margin-left: 7em;
+  margin-top: -5px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer img {
+  width: 20em;
+  height: 20em;
+  margin-top: -150px;
+  margin-bottom: 0;
+}
+
+.footer .uno {
+  margin-top: -40%;
+  margin-left: -30%;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-top: 5%;
+  margin-left: 43%;
+}
+
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer ul a:hover {
+  opacity: 0.8;
+}
+
+.footer .item.text {
+  margin-bottom: 36px;
+}
+
+.footer .item.text p {
+  opacity: 0.6;
+  margin-left: 20%;
+  margin-bottom: 0;
+}
+
+.footer .item.social {
   text-align: center;
-  size: 50em;
+  margin-top: 2%;
+}
+
+.footer .item.social > a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer .item.social > a:hover {
+  opacity: 0.5;
+}
+
+.footer .copyright {
+  text-align: center;
+  padding-top: 1%;
+  opacity: 0.3;
+  font-size: 0.8em;
+  margin-bottom: -3%;
 }
 
 /* MEDIA */
@@ -209,6 +298,23 @@ footer {
   }
   .producto-hijo .contenedor .boton .left {
     height: 250%;
+  }
+  .footer {
+    height: auto;
+    position: absolute;
+  }
+  .footer h3 {
+    margin-left: 6em;
+  }
+
+  .footer img {
+    width: 15em;
+    height: 15em;
+    margin-top: -100px;
+  }
+
+  .footer.uno {
+    margin-left: -30%;
   }
 }
 
@@ -250,6 +356,19 @@ footer {
   }
   .producto-hijo .contenedor .boton .left {
     height: 250%;
+  }
+  .footer {
+    padding: 5%;
+  }
+
+  .footerh3 {
+    margin-left: 4em;
+  }
+
+  .footer img {
+    width: 10em;
+    height: 10em;
+    margin-top: -60px;
   }
 }
 
@@ -293,7 +412,32 @@ footer {
   .producto-hijo .contenedor .boton .left {
     height: 250%;
   }
+
+  .footer .item:not(.social) {
+    text-align: center;
+  }
+
+  .footer h3 {
+    margin-left: 0%;
+    margin-top: 10px;
+  }
+
+  .footer .uno {
+    margin-left: -15%;
+    margin-top: -25%;
+  }
+
+  .footer ul {
+    margin-left: 40%;
+    text-align: left;
+  }
+
+  .footer .item.text p {
+    margin-left: 0%;
+    text-align: center;
+  }
 }
+
 @media screen and (max-width: 400px) {
   .nav_menu {
     left: 45%;
@@ -323,6 +467,7 @@ footer {
     font-size: 0.5rem;
     margin-block-end: 0.1em;
   }
+
   .producto {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, 7em);
@@ -339,5 +484,28 @@ footer {
   }
   .producto-hijo .contenedor .boton .left {
     height: 250%;
+  }
+  .footer {
+    position: inherit;
+  }
+  .footer h3 {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .footer img {
+    margin-top: -50px;
+  }
+
+  .footer .uno {
+    margin-left: 0%;
+    margin-top: -15%;
+    text-align: center;
+  }
+
+  .footer ul {
+    margin-left: 0%;
+    margin-top: -1%;
+    text-align: center;
   }
 }
