@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="estilos.css">
     <title>La Pascuala</title>
 </head>
 <body>
+  <!-- Navegacion -->
     <Header>
         <nav class="nav_menu">
             <a href="#">Menu</a>
@@ -19,9 +20,41 @@
             <a href="carrito.html">Carrito</a>
             <div class="dot"></div>
           </nav>
-    </Header>
-    <main class="cards">
-  
+  </Header>
+
+<!-- Carrusel -->
+<main class="container">
+  <div id="carouselExampleIndicators" class="carousel slide w-100" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Imagenes/carrusel-crossaint.jpg" class="d-block w-100" alt="Crosaint">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/carrusel-dona.jpg" class="d-block w-100" alt="dona">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/carrusel-cupcakes" class="d-block w-100" alt="Cupcakes">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</main>
+
+<!-- Cards -->
+<div class="container">
+    <main class=" cards">
         <div class="news-card">
           <a href="#" class="news-card_link"></a>
           <img src="Imagenes/Cupcakes.png" alt="budin" class="news-card_image">
@@ -49,37 +82,26 @@
           </div>
         </div>
     </main>
-    <main class="footer">
-      <footer>
+  </div>
+
+    <!-- Footer -->
           <div class="container">
-              <div class="row">
-                  <div class="col-sm-6 col-md-3 item">
-                      <img src="Imagenes/Pascuala name.png" alt="La Pascuala logo">
-                      <div class="uno">
-                      <ul>
-                          <li><a href="#">Web design</a></li>
-                          <li><a href="#">Development</a></li>
-                          <li><a href="#">Hosting</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3 item">
-                      <h3>About</h3>
-                      <ul>
-                          <li><a href="#">Company</a></li>
-                          <li><a href="#">Team</a></li>
-                          <li><a href="#">Careers</a></li>
-                      </ul>
-                  </div>
-                  <div class="col-md-6 item text">
-                      <h3>Company Name</h3>
-                      <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
-                  </div>
-                  <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
-              </div>
-              <p class="copyright">La pascuala © 2022</p>
+            <div class="footer-basic">
+              <footer>
+                  <div class="col-xs-12 social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+                  <ul class="col-xs-12 list-inline">
+                      <li class="list-inline-item"><a href="#">Menu</a></li>
+                      <li class="list-inline-item"><a href="#">Catalogo</a></li>
+                      <li class="list-inline-item"><a href="#">Contacto</a></li>
+                      <li class="list-inline-item"><a href="#">Terminos y condiciones</a></li>
+                      <li class="list-inline-item"><a href="#">Politicas de privacidad</a></li>
+                  </ul>
+                  <p class="copyright">La Pascuala © 2022</p>
+              </footer>
           </div>
-      </footer>
-    </main>
+          </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
