@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="estilos.css">
+
+        <title>Catalogo</title>
+</head>
+<body>
+  <Header>
+    <nav class="nav_menu">
+        <a href="index.html">Menu</a>
+        <a href="#">Catalogo</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="envios.html">Envios</a>
+        <a href="carrito.html"><i class="bi bi-bag"></i></a>
+        <div class="dot"></div>
+      </nav>
+    </Header>
+<!-- PRODUCTOS -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="grid search">
+        <div class="grid-body">
+          <div class="row">
+            <!-- CATEGORIAS -->
+            <div class="col-xs-12 col-md-3 col-lg-2 category">
+              <h4>Categorias:</h4>
+              <div class="checkbox">
+                <label><input type="checkbox" class="icheck"> Tortas</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" class="icheck"> Facturas</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" class="icheck"> Budines</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" class="icheck"> Donas</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" class="icheck"> Especialidades</label>
+              </div>
+              <div class="padding"></div>
+            </div>
+            <!-- BARRA DE BUSQUEDA-->
+            <div class="col-md-9">
+              <div class="input-group">
+                <input type="text" class="form-control" value="¿Qué buscas?">
+                <span class="input-group-btn">
+                  <button class="btn btn-primary" type="button"><i class="bi bi-search"></i></button>
+                </span>
+              </div>
+              <div class="padding"></div>
+              <div class="row">
+                <!-- ORDEN DE RESULTADOS -->
+                <div class="col-xs-2 col-md-3">
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-default dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Ordenar por</button>
+  
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Nombre</a></li>
+                      <li><a class="dropdown-item" href="#">Mayor precio</a></li>
+                      <li><a class="dropdown-item" href="#">Menos precio</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- VISTA -->
+                <div class="col-xs-2 col-md-3 text-right">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default active"><i class="bi bi-border-width"></i></button>
+                    <button type="button" class="btn btn-default"><i class="bi bi-grid-fill"></i></button>
+                  </div>
+                </div>
+              </div>
+              <!-- RESULTADO -->
+              <div class="table-responsive">
+                <table class="table table">
+                  <tbody>
+                    <!-- Producto 1 -->
+                    <tr>
+                    <td class="image"><img src="Imagenes/Catalogo/budin.jpg" alt=""></td>
+                    <td class="product"><strong>Lemon Pie</strong><br>De naranja glaseado sabor limon y una lluvia de almendras.</td>
+                    <td class="rate text-right"><span></span></td>
+                    <td class="price text-right"><div class="valor">$xxx</div><td>
+                      <td class="left"><button type="button" class="cart"><a href="#"><i class="bi bi-cart2"></i></a></button></td>
+                    </tr>
+                    <!-- Producto 2 -->
+                    <tr>
+                    <td class="image"><img src="Imagenes/Catalogo/cheescake.jpg" alt=""></td>
+                    <td class="product"><strong>Selva negra</strong><br>Pastel de queso bañado con frutos rojos.</td>
+                    <td class="rate text-right"><span></span></td>
+                    <td class="price text-right"><div class="valor">$xxx</div><td>
+                    <td class="left"><button type="button" class="cart"><a href="#"><i class="bi bi-cart2"></i></a></button></td>
+                    </tr>
+                    <!-- Producto 3 -->
+                    <tr>
+                    <td class="image"><img src="Imagenes/Catalogo/pancakes.jpg" alt=""></td>
+                    <td class="product"><strong>Chocotorta</strong><br>Torre de 4 pancakes bañados a eleccion.</td>
+                    <td class="rate text-right"><span></span></td>
+                    <td class="price text-right"><div class="valor">$xxx</div><td>
+                    <td class="left"><button type="button" class="cart"><a href="#"><i class="bi bi-cart2"></i></a></button></td>
+                    </tr>
+                  <!-- Producto 4 -->
+                  <tr>
+                  <td class="image"><img src="Imagenes/Catalogo/volcan.png" alt=""></td>
+                  <td class="product"><strong>Cupkcakes</strong><br>Fino biszcochuelo de chocolate con el interior fundido.</td>
+                  <td class="rate text-right"><span></span></td>
+                  <td class="price text-right"><div class="valor">$xxx</div><td>
+                  <td class="left"><button type="button" class="cart"><a href="#"><i class="bi bi-cart2"></i></a></button></td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            </div>
+          </div>
+          <!-- PAGINACION -->
+              <section class="paginacion">
+                 <ul>
+                  <li><a href="catalogo.html">1</a></li>
+                  <li><a href="#" class="active">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                </ul>
+              </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<!-- FOOTER -->
+  <div class="col-md-12 footer-basic">
+    <footer>
+        <div class="social"><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-whatsapp"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Menu</a></li>
+            <li class="list-inline-item"><a href="#">Catalogo</a></li>
+            <li class="list-inline-item"><a href="#">Contacto</a></li>
+            <li class="list-inline-item"><a href="#">Terminos y condiciones</a></li>
+            <li class="list-inline-item"><a href="#">Politicas de privacidad</a></li>
+        </ul>
+        <p class="copyright">La Pascuala © 2022</p>
+    </footer>
+</div>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
