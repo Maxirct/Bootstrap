@@ -15,10 +15,6 @@ body {
   background-size: 100vh;
   font-family: "Comfortaa", cursive;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> rama2
 /* NAV */
 header {
   height: 80px;
@@ -48,10 +44,7 @@ header .nav_menu {
 .bi.bi-bag {
   font-size: 30px;
 }
-<<<<<<< HEAD
 
-/* INDEX */
-=======
 /* FIN NAV */
 
 /* NAV OCULTA */
@@ -157,25 +150,18 @@ header .nav_menu {
   transform: none;
 }
 /* FIN NAV OCULTA */
-
 /* ------------------INDEX----------------- */
 /* CARRUSEL */
->>>>>>> rama2
 .carousel-item {
   overflow: hidden;
 }
 .carousel {
   margin-top: 5%;
-<<<<<<< HEAD
-}
-
-=======
   z-index: 0;
 }
 /* FIN CARRUSEL */
 
 /* CARDS */
->>>>>>> rama2
 .cards {
   margin: 20%;
   margin-top: 5em;
@@ -234,13 +220,7 @@ header .nav_menu {
   color: #ccc;
 }
 /* ---------------------FIN INDEX------------------- */
-
-<<<<<<< HEAD
-/* CATALOGO */
-
-=======
 /*----------------------CATALOGO------------------- */
->>>>>>> rama2
 .grid {
   position: relative;
   width: 100%;
@@ -261,7 +241,6 @@ header .nav_menu {
 .btn-group {
   margin-left: 105px;
 }
-<<<<<<< HEAD
 .category {
   margin-top: 72px;
 }
@@ -270,11 +249,8 @@ header .nav_menu {
 }
 input .icheck {
   color: #2c8529;
-=======
-.valor {
   margin-top: 55px;
   background-color: #42424200;
->>>>>>> rama2
 }
 .col-sm-6 {
   width: 160px;
@@ -291,26 +267,17 @@ input .icheck {
 .form-control {
   height: 38px;
 }
-<<<<<<< HEAD
-
 .search table tr:hover {
   cursor: pointer;
 }
-
-=======
 .search table tr:hover {
   cursor: pointer;
 }
->>>>>>> rama2
 .search table tr td img {
   width: 150px;
   height: 150px;
   border-radius: 8px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> rama2
 .search table tr td.price {
   font-size: 1.5em;
   line-height: 50px;
@@ -333,10 +300,6 @@ button.cart {
 .cart:hover {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.493);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> rama2
 .bi.bi-cart2 {
   font-size: 40px;
   color: #424242;
@@ -349,26 +312,14 @@ button.cart {
 .paginacion {
   margin: 20px 0;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> rama2
 .paginacion ul {
   list-style: none;
   text-align: center;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> rama2
 .paginacion ul li {
   display: inline-block;
   margin-right: 10px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> rama2
 .paginacion ul li a {
   display: block;
   padding: 10px 20px;
@@ -376,24 +327,17 @@ button.cart {
   background: #02495900;
   text-decoration: none;
 }
-<<<<<<< HEAD
-
 .paginacion ul li a:hover {
   background: #fc9474;
   border-radius: 24px;
 }
-
 .paginacion ul li .active {
   background: #f0592c;
   font-weight: bold;
   border-radius: 16px;
-=======
-.paginacion ul li a:hover {
   background: #fc9474;
   border-radius: 24px;
->>>>>>> rama2
 }
-
 .paginacion ul li .active {
   background: #f0592c;
   font-weight: bold;
@@ -589,7 +533,6 @@ h3 {
   color: #191919;
   margin-bottom: 0;
 }
-<<<<<<< HEAD
 .ion-social-instagram:hover {
   color: rgb(146, 65, 252);
 }
@@ -810,17 +753,11 @@ h3 {
     text-align: center;
   }
 }
-
-@media screen and (max-width: 400px) {
-=======
 /* ------------------FIN FOOTER------------------ */
-
 @media screen and (min-width: 320px) {
->>>>>>> rama2
   .nav_menu {
     visibility: hidden;
   }
-<<<<<<< HEAD
   .nav_menu a {
     font-size: 0.7em;
     margin-inline: 0.5vh;
@@ -832,13 +769,10 @@ h3 {
     margin: 10%;
     grid-template-columns: 6.5em 6.5em 6.5em;
     column-gap: 1%;
-=======
-  .oculto {
     visibility: visible;
   }
   .input-group {
     z-index: 0;
->>>>>>> rama2
   }
   .col-md-12 .base {
     margin-top: -50px;
