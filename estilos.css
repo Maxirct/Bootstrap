@@ -15,6 +15,7 @@ body {
   background-size: 100vh;
   font-family: "Comfortaa", cursive;
 }
+
 /* NAV */
 header {
   height: 80px;
@@ -44,7 +45,6 @@ header .nav_menu {
 .bi.bi-bag {
   font-size: 30px;
 }
-
 /* FIN NAV */
 
 /* NAV OCULTA */
@@ -150,6 +150,7 @@ header .nav_menu {
   transform: none;
 }
 /* FIN NAV OCULTA */
+
 /* ------------------INDEX----------------- */
 /* CARRUSEL */
 .carousel-item {
@@ -220,6 +221,7 @@ header .nav_menu {
   color: #ccc;
 }
 /* ---------------------FIN INDEX------------------- */
+
 /*----------------------CATALOGO------------------- */
 .grid {
   position: relative;
@@ -241,14 +243,7 @@ header .nav_menu {
 .btn-group {
   margin-left: 105px;
 }
-.category {
-  margin-top: 72px;
-}
 .valor {
-  margin-top: 55px;
-}
-input .icheck {
-  color: #2c8529;
   margin-top: 55px;
   background-color: #42424200;
 }
@@ -266,9 +261,6 @@ input .icheck {
 }
 .form-control {
   height: 38px;
-}
-.search table tr:hover {
-  cursor: pointer;
 }
 .search table tr:hover {
   cursor: pointer;
@@ -331,13 +323,7 @@ button.cart {
   background: #fc9474;
   border-radius: 24px;
 }
-.paginacion ul li .active {
-  background: #f0592c;
-  font-weight: bold;
-  border-radius: 16px;
-  background: #fc9474;
-  border-radius: 24px;
-}
+
 .paginacion ul li .active {
   background: #f0592c;
   font-weight: bold;
@@ -370,10 +356,17 @@ textarea {
   width: 400px;
   border-radius: 15px;
   overflow: hidden;
-  transition: all 0.2s ease-in-out;
+  background-color: #f0592c;
+  border-color: #f0592c;
 }
+.send-button:hover {
+  background-color: #f05a2c63;
+  border-color: #f0592c;
+}
+
 .alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
+  font-size: 25px;
+  color: #161616;
 }
 .direct-contact-container {
   max-width: 400px;
@@ -424,9 +417,6 @@ textarea {
   border-radius: 15px;
   transition: all 0.2s ease-in-out;
 }
-.alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
-}
 .direct-contact-container {
   width: 100%;
 }
@@ -454,9 +444,6 @@ textarea {
   width: 100%;
   border-radius: 15px;
   transition: all 0.2s ease-in-out;
-}
-.alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
 }
 .direct-contact-container {
   width: 100%;
@@ -533,242 +520,13 @@ h3 {
   color: #191919;
   margin-bottom: 0;
 }
-.ion-social-instagram:hover {
-  color: rgb(146, 65, 252);
-}
-.ion-social-facebook:hover {
-  color: rgb(43, 127, 253);
-}
-.ion-social-whatsapp:hover {
-  color: rgb(43, 189, 62);
-}
-
-/* MEDIA */
-@media screen and (max-width: 992px) {
-  .cards {
-    margin: 40%;
-    margin-top: 0.5em;
-    grid-template-columns: 15em 15em 15em;
-    column-gap: 10%;
-  }
-  .text-right {
-    margin-left: 310px;
-  }
-  .news-card {
-    min-width: 50px;
-    height: 13rem;
-  }
-  .news-card_title {
-    font-size: 1.2em;
-    margin-block-end: 0.2em;
-  }
-  .news-card_date {
-    font-size: 0.8rem;
-    margin-block-end: 0.1em;
-  }
-  .producto {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 10em);
-    row-gap: 7%;
-  }
-  .producto-hijo {
-    width: 100%;
-    height: 100%;
-  }
-  .producto-hijo .foto {
-    height: 70%;
-    background-size: 110%;
-  }
-  .producto-hijo .contenedor .boton .left {
-    height: 250%;
-  }
-  .footer {
-    height: auto;
-    position: absolute;
-  }
-  .footer h3 {
-    margin-left: 6em;
-  }
-
-  .footer img {
-    width: 15em;
-    height: 15em;
-    margin-top: -100px;
-  }
-
-  .footer.uno {
-    margin-left: -30%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  div .input-group {
-    width: 670px;
-  }
-  div .category {
-    display: none;
-  }
-  div .table-responsive {
-    width: 670px;
-  }
-  div .btn-group {
-    margin-left: 280px;
-  }
-  .text-right {
-    margin-left: 170px;
-  }
-  .nav_menu a {
-    font-size: 1em;
-    margin-inline: 1vh;
-  }
-  .text-right {
-    margin-bottom: 10px;
-  }
-  .cards {
-    margin: 40%;
-    margin-top: 0.5em;
-    grid-template-columns: 12em 12em 12em;
-    column-gap: 10%;
-  }
-  .news-card {
-    min-width: 50px;
-    height: 12rem;
-  }
-  .news-card_title {
-    font-size: 1em;
-    margin-block-end: 0.2em;
-  }
-  .news-card_date {
-    font-size: 0.5rem;
-    margin-block-end: 0.1em;
-  }
-  .producto {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 10em);
-    row-gap: 7%;
-  }
-  .producto-hijo {
-    width: 100%;
-    height: 100%;
-  }
-  .producto-hijo .foto {
-    height: 70%;
-    background-size: 110%;
-  }
-  .producto-hijo .contenedor .boton .left {
-    height: 250%;
-  }
-  .footer {
-    padding: 5%;
-  }
-
-  .footerh3 {
-    margin-left: 4em;
-  }
-
-  .footer img {
-    width: 10em;
-    height: 10em;
-    margin-top: -60px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  header {
-    margin-top: 2%;
-  }
-  .nav_menu a {
-    font-size: 0.8em;
-    margin-inline: 0.8vh;
-  }
-  div .input-group {
-    width: 480px;
-  }
-  div .table-responsive {
-    width: 480px;
-  }
-  div .text-right {
-    display: none;
-  }
-  td .cart {
-    display: none;
-  }
-  .cards {
-    margin: 40%;
-    margin-top: 0.5em;
-    grid-template-columns: 8em 8em 8em;
-    column-gap: 5%;
-  }
-  .news-card {
-    min-width: 50px;
-    height: 8rem;
-  }
-  .news-card_title {
-    font-size: 0.8em;
-    margin-block-end: 0.2em;
-  }
-  .news-card_date {
-    font-size: 0.5rem;
-    margin-block-end: 0.1em;
-  }
-  .producto {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 7em);
-    row-gap: 5%;
-  }
-
-  .producto-hijo {
-    width: 100%;
-    height: 7em;
-  }
-  .producto-hijo .foto {
-    height: 50%;
-    background-size: 100%;
-  }
-  .producto-hijo .contenedor .boton .left {
-    height: 250%;
-  }
-
-  .footer .item:not(.social) {
-    text-align: center;
-  }
-
-  .footer h3 {
-    margin-left: 0%;
-    margin-top: 10px;
-  }
-
-  .footer .uno {
-    margin-left: -15%;
-    margin-top: -25%;
-  }
-
-  .footer ul {
-    margin-left: 40%;
-    text-align: left;
-  }
-
-  .footer .item.text p {
-    margin-left: 0%;
-    text-align: center;
-  }
-}
 /* ------------------FIN FOOTER------------------ */
+
 @media screen and (min-width: 320px) {
   .nav_menu {
     visibility: hidden;
   }
-  .nav_menu a {
-    font-size: 0.7em;
-    margin-inline: 0.5vh;
-  }
-  div .input-group {
-    width: 100%;
-  }
-  .cards {
-    margin: 10%;
-    grid-template-columns: 6.5em 6.5em 6.5em;
-    column-gap: 1%;
+  .oculto {
     visibility: visible;
   }
   .input-group {
