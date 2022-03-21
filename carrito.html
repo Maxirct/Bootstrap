@@ -11,18 +11,39 @@
 </head>
 <body>
     <Header>
-        <nav class="nav_menu">
-            <a href="index.html">Menu</a>
-            <a href="Catalogo.html">Catalogo</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="envios.html">Envios</a>
-            <a href="#">Carrito</a>
-          </nav>
+        <Header>
+            <nav class="nav_menu">
+                <a href="index.html">Menu</a>
+                <a href="catalogo.html">Catalogo</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="envios.html">Envios</a>
+                <a href="#"><i class="bi bi-bag"></i></a>
+                <div class="dot"></div>
+              </nav>
+              <div class="container oculto">
+                <nav class="nav" role="navigation">
+                  <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                      <li><a href="index.html">MENU</a></li>
+                      <li><a href="Catalogo.html">CATALOGO</a></li>
+                      <li><a href="contacto.html">CONTACTO</a></li>
+                      <li><a href="envios.html">ENVIOS</a></li>
+                      <li><a href="#">CARRITO</a></li>
+                    </ul>
+                  </div>
+                  <div class="bag"><a href="carrito.html"><i class="bi bi-bag"></i></a></div>
+                </nav>
+          </div>
+            </Header>
     </Header>
     <div class="container">
         <div class="footer-basic">
           <footer>
-              <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="ion-social-whatsapp"></i></a></div>
               <ul class="list-inline">
                   <li class="list-inline-item"><a href="#">Menu</a></li>
                   <li class="list-inline-item"><a href="#">Catalogo</a></li>

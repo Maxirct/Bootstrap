@@ -13,20 +13,72 @@
     <Header>
         <nav class="nav_menu">
             <a href="index.html">Menu</a>
-            <a href="Catalogo.html">Catalogo</a>
+            <a href="catalogo.html">Catalogo</a>
             <a href="#">Contacto</a>
             <a href="envios.html">Envios</a>
-            <a href="carrito.html">Carrito</a>
+            <a href="carrito.html"><i class="bi bi-bag"></i></a>
             <div class="dot"></div>
           </nav>
-    </Header>
-    <div class="container">
-        <div class="footer-basic">
+          <div class="container oculto">
+            <nav class="nav" role="navigation">
+              <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                  <li><a href="index.html">MENU</a></li>
+                  <li><a href="Catalogo.html">CATALOGO</a></li>
+                  <li><a href="#">CONTACTO</a></li>
+                  <li><a href="envios.html">ENVIOS</a></li>
+                  <li><a href="carrito.html">CARRITO</a></li>
+                </ul>
+              </div>
+              <div class="bag"><a href="carrito.html"><i class="bi bi-bag"></i></a></div>
+            </nav>
+      </div>
+        </Header>
+
+        <section id="contact">
+          <h1 class="section-header">CONTACTO</h1>
+          <div class="contact-wrapper">
+            <form id="contact-form" class="form-horizontal" role="form">
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" id="name" placeholder="Nombre" name="name" value="" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="email" class="form-control" id="email" placeholder="Email" name="email" value="" required>
+                </div>
+              </div>
+              <textarea class="form-control" rows="10" placeholder="Mensaje" name="message" required></textarea>
+        
+              <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                <div class="alt-send-button">
+                  <i class="bi bi-send-fill"></i>
+                </div>
+              </button>
+            </form>
+        </section><br><br><br><br>
+
+<div class="container">
+<div class="col-md-12">
+  <h3 class="text_medios">NUESTROS MEDIOS DE COMUNICACION MAS DIRECTOS</h3>
+</div>
+<div class="iconos">
+  <a class="medioi" href="#"><i class="in bi-instagram"></i></a><a class="mediow" href="#"><i class="wa bi-whatsapp"></i></a>
+</div>
+</div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487.324544550878!2d-58.41478250483982!3d-34.74763938391616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2803c86d31f%3A0x830d352352fbac05!2sPASCUALA%20PASTELERIA!5e0!3m2!1ses-419!2sar!4v1647673919946!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+        <!-- Footer -->
+         <div class="footer-basic">
           <footer>
-              <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-              <ul class="list-inline">
-                  <li class="list-inline-item"><a href="#">Menu</a></li>
-                  <li class="list-inline-item"><a href="#">Catalogo</a></li>
+            <div class="social"><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-whatsapp"></i></a></div>
+              <ul class="col-xs-12 list-inline">
+                  <li class="list-inline-item"><a href="#">Ubicacion</a></li>
                   <li class="list-inline-item"><a href="#">Contacto</a></li>
                   <li class="list-inline-item"><a href="#">Terminos y condiciones</a></li>
                   <li class="list-inline-item"><a href="#">Politicas de privacidad</a></li>
@@ -34,6 +86,7 @@
               <p class="copyright">La Pascuala © 2022</p>
           </footer>
       </div>
-      </div>
+      <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>
