@@ -15,6 +15,14 @@ body {
   background-size: 100vh;
   font-family: "Comfortaa", cursive;
 }
+.envios {
+  width: 100%;
+  height: 100%;
+}
+.work {
+  width: 100%;
+  height: 100%;
+}
 
 /* NAV */
 header {
@@ -48,30 +56,27 @@ header {
 /* FIN NAV */
 
 /* NAV OCULTA */
-
-.oculto {
-  visibility: hidden;
-  margin-top: 10px;
-  a {
+.nav {
+  .bag {
+    margin-left: auto;
+    margin-top: -130px;
+  }
+  .bag i:hover {
+    color: #f0592c;
+  }
+  .nav a {
     text-decoration: none;
     color: #161616;
     opacity: 1;
     font-size: 18px;
     transition: 200ms;
   }
-  a:hover {
+  .nav a:hover {
     color: #ffffff;
   }
-  ul {
+  .nav ul {
     padding: 0;
     list-style-type: none;
-  }
-  .bag i:hover {
-    color: #f0592c;
-  }
-  .bag {
-    margin-left: auto;
-    margin-top: -130px;
   }
   #menuToggle {
     display: flex;
@@ -82,7 +87,8 @@ header {
     z-index: 1;
     user-select: none;
   }
-  input {
+
+  #menuToggle input {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -90,7 +96,8 @@ header {
     opacity: 0;
     z-index: 2;
   }
-  span {
+
+  #menuToggle span {
     width: 32px;
     height: 3px;
     margin-bottom: 5px;
@@ -100,23 +107,29 @@ header {
     transform-origin: 5px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
-  span:first-child {
+
+  /* ANIMACION NAV OCULTA*/
+  #menuToggle span:first-child {
     transform-origin: 0% 0%;
   }
-  span:nth-last-child(2) {
+
+  #menuToggle span:nth-last-child(2) {
     transform-origin: 0% 100%;
   }
-  input:checked ~ span {
+
+  #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-3px, -1px);
   }
-  input:checked ~ span:nth-last-child(3) {
+  #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
-  input:checked ~ span:nth-last-child(2) {
+  #menuToggle input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
   }
+
+  /* FIN ANIMACION NAV OCULTA*/
   #menu {
     position: absolute;
     width: 100vh;
@@ -129,7 +142,9 @@ header {
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
-  li {
+
+  #menu li {
+    list-style: none;
     font-weight: bold;
     text-align: center;
     margin-left: -10px;
@@ -137,10 +152,11 @@ header {
     transition-delay: 0.5s;
   }
 
-  input:checked ~ ul {
+  #menuToggle input:checked ~ ul {
     transform: none;
   }
 }
+
 /* FIN NAV OCULTA */
 
 /* ------------------INDEX----------------- */
@@ -525,6 +541,9 @@ header {
   .oculto {
     visibility: visible;
   }
+  .bag a {
+    margin-top: 5px;
+  }
   .input-group {
     z-index: 0;
   }
@@ -576,10 +595,20 @@ header {
     font-size: 50px;
   }
 }
-
+@media screen and (min-width: 360px) {
+  .bag a {
+    margin-top: 25px;
+  }
+}
 @media screen and (min-width: 400px) {
-  .bag {
-    margin-top: -110px;
+  .bag a {
+    margin-top: -5px;
+  }
+  .news-card_title {
+    font-size: 14px;
+  }
+  div .news-card_date {
+    padding: 0 !important;
   }
 }
 
@@ -588,13 +617,13 @@ header {
     visibility: visible;
   }
   .oculto {
-    visibility: hidden;
+    visibility: collapse;
   }
   .left {
     visibility: visible;
   }
-  .valor {
-    visibility: visible;
+  .nav {
+    visibility: hidden;
     margin-left: 25px;
   }
   .col-md-9 {
