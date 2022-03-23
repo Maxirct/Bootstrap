@@ -147,7 +147,7 @@ header {
     list-style: none;
     font-weight: bold;
     text-align: center;
-    margin-left: -10px;
+    margin-left: -40px;
     width: 100px;
     transition-delay: 0.5s;
   }
@@ -342,6 +342,9 @@ header {
 
 /*----------------------CONTACTO-------------------*/
 .contacto {
+  form {
+    margin-bottom: 100px;
+  }
   .section-header {
     text-align: center;
     font: 60px;
@@ -435,13 +438,6 @@ header {
     text-align: center;
     font: 60px;
     margin-top: 50px;
-  }
-  .contact-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    width: 400px;
   }
   .form-control,
   textarea {
@@ -583,6 +579,7 @@ header {
   }
   #menu li {
     padding: 10px;
+    font-size: 14px;
   }
   .iconos {
     height: 90px;
@@ -611,7 +608,11 @@ header {
     padding: 0 !important;
   }
 }
-
+@media screen and (min-width: 600px) {
+  .bag a {
+    margin-top: 5px;
+  }
+}
 @media screen and (min-width: 768px) {
   .nav_menu {
     visibility: visible;
