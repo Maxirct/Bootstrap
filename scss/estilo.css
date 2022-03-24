@@ -299,6 +299,11 @@ header .bi.bi-bag {
   color: #161616;
 }
 
+.container .hijo .todo:hover {
+  -webkit-box-shadow: 5px 10px 15px #16161660;
+          box-shadow: 5px 10px 15px #16161660;
+}
+
 .container .hijo .todo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -594,8 +599,16 @@ header .bi.bi-bag {
   opacity: 0.7;
 }
 
-.footer-basic a:hover {
-  color: #f0592c;
+.footer-basic a .bi-whatsapp:hover {
+  color: #32b938;
+}
+
+.footer-basic a .bi-facebook:hover {
+  color: #3b60da;
+}
+
+.footer-basic a .bi-instagram:hover {
+  color: #dd3173;
 }
 
 .footer-basic .social {
@@ -632,7 +645,7 @@ header .bi.bi-bag {
 /* -----------FIN FOOTER--------- */
 @media screen and (min-width: 360px) {
   .bag a {
-    margin-top: -15px;
+    margin-top: 12px;
   }
   .footer-basic .social {
     margin-top: -20px;

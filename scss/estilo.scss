@@ -237,6 +237,9 @@ header {
     color: #161616;
   }
   .hijo {
+    .todo:hover {
+      box-shadow: 5px 10px 15px#16161660;
+    }
     .todo {
       display: flex;
       width: 100%;
@@ -472,9 +475,16 @@ header {
     color: #161616;
     text-decoration: none;
     opacity: 0.7;
-  }
-  a:hover {
-    color: #f0592c;
+
+    .bi-whatsapp:hover {
+      color: #32b938;
+    }
+    .bi-facebook:hover {
+      color: rgb(59, 96, 218);
+    }
+    .bi-instagram:hover {
+      color: #dd3173;
+    }
   }
   .social {
     text-align: center;
@@ -509,7 +519,7 @@ header {
 
 @media screen and (min-width: 360px) {
   .bag a {
-    margin-top: -15px;
+    margin-top: 12px;
   }
   .footer-basic {
     .social {
