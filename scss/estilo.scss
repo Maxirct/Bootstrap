@@ -70,7 +70,8 @@ header {
 .nav {
   .bag {
     margin-left: auto;
-    margin-top: -125px;
+    margin-top: -130px;
+    font-size: 25px;
   }
   .bag i:hover {
     color: #f0592c;
@@ -124,22 +125,22 @@ header {
     position: absolute;
     width: 100vh;
     height: 100vh;
-    margin-left: -25px;
-    margin-top: -35px;
-    padding-top: 150px;
-    background-color: #ff8555;
+    margin: -80%;
+    padding: 110px;
+    background: linear-gradient(rgb(216, 234, 255), rgb(178, 172, 255));
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     li {
       list-style: none;
       font-weight: bold;
-      margin-left: 70px;
-      margin-top: 15px;
-      width: 5%;
+      text-align: center;
+      width: 20%;
+      margin-top: 20px;
       transition-delay: 0.2s;
     }
     a {
-      font-size: 16px;
+      text-align: center;
+      font-size: 18px;
     }
   }
   /* ANIMACION NAV OCULTA*/
@@ -268,7 +269,7 @@ header {
       border-radius: 8px;
       box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.082);
       .todo-1 {
-        width: 200px;
+        width: 180px;
         height: 95px;
         .titulo {
           font-size: 12px;
@@ -527,9 +528,23 @@ header {
 
 /* -----------FIN FOOTER--------- */
 
-@media screen and (min-width: 360px) {
-  .bag a {
-    margin-top: 12px;
+@media screen and (min-width: 375px) {
+  .nav {
+    .bag {
+      margin-top: -110px;
+      font-size: 25px;
+    }
+  }
+  .opciones {
+    .index_cards {
+      .index_cards_link {
+      }
+      .index_cards_img {
+        img {
+          margin-left: 17px;
+        }
+      }
+    }
   }
   .footer-basic {
     .social {
@@ -555,6 +570,7 @@ header {
       margin-top: 50px;
       .todo {
         .todo-1 {
+          width: 200px;
           .titulo {
             font-size: 14px;
           }
@@ -562,11 +578,57 @@ header {
             font-size: 12px;
           }
           .precio {
-            margin-top: 20px;
+            margin-top: 15px;
             font-size: 18px;
           }
           .foto {
-            margin-left: 230px;
+            margin-left: 245px;
+            margin-top: -95px;
+            width: 90px;
+            height: 90px;
+          }
+          img {
+            border-radius: 12px;
+            width: 90px;
+            height: 90px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 425px) {
+  .nav {
+    .bag {
+      margin-top: -115px;
+      font-size: 30px;
+    }
+  }
+  .opciones {
+    .index_cards {
+      .index_cards_link {
+      }
+      .index_cards_img {
+        img {
+          margin-left: 25px;
+        }
+      }
+    }
+  }
+  .container {
+    .hijo {
+      .todo {
+        .todo-1 {
+          width: 250px;
+          .titulo {
+            font-size: 16px;
+          }
+          .precio {
+            margin-top: 15px;
+            font-size: 18px;
+          }
+          .foto {
+            margin-left: 295px;
             margin-top: -100px;
             width: 90px;
             height: 90px;
@@ -581,11 +643,7 @@ header {
     }
   }
 }
-
 @media screen and (min-width: 600px) {
-  .bag a {
-    margin-top: 0px;
-  }
   .footer-basic {
     ul {
       font-size: 18px;
@@ -599,6 +657,9 @@ header {
   }
   .nav {
     visibility: hidden;
+    .bag {
+      margin-top: -150px;
+    }
   }
   .info {
     margin-top: 100px;
@@ -671,7 +732,7 @@ header {
         width: 100px;
         height: 100px;
         img {
-          margin-left: 25px;
+          margin-left: 30px;
           width: 100px;
           height: 100px;
         }
