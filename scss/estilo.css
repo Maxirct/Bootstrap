@@ -8,6 +8,10 @@
           box-sizing: border-box;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(216, 234, 255, 0.473)), to(rgba(153, 146, 255, 0.445)));
   background: linear-gradient(rgba(216, 234, 255, 0.473), rgba(153, 146, 255, 0.445));
@@ -56,7 +60,6 @@ header .nav_menu .bi.bi-bag {
   font-size: 30px;
 }
 
-/* FIN NAV */
 /* NAV OCULTA */
 .nav {
   /* ANIMACION NAV OCULTA*/
@@ -195,9 +198,7 @@ header .nav_menu .bi.bi-bag {
           transform: rotate(-45deg) translate(0, -1px);
 }
 
-/* FIN NAV OCULTA */
 /* ---------INDEx--------- */
-/* CARRUSEL */
 .carousel {
   margin-top: 5%;
   z-index: 0;
@@ -207,8 +208,7 @@ header .nav_menu .bi.bi-bag {
   overflow: hidden;
 }
 
-/* FIN CARRUSEL */
-/* CARDS */
+/*------------- CARDS----------------- */
 .opciones {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -359,7 +359,7 @@ header .nav_menu .bi.bi-bag {
   height: 80px;
 }
 
-/* PAGINACIÓN */
+/*-------- PAGINACIÓN------------- */
 .paginacion {
   margin: 20px 0;
 }
@@ -393,6 +393,7 @@ header .nav_menu .bi.bi-bag {
   border-radius: 16px;
 }
 
+/*-----------FIN CATALOGO-----------*/
 /*--------------CONTACTO------------*/
 .contacto form {
   margin-bottom: 50px;
@@ -579,6 +580,335 @@ header .nav_menu .bi.bi-bag {
 }
 
 /* ---------FIN DE CONTACTO--------*/
+/*----------CARRITO DE COMPRAS---------*/
+.shopping {
+  width: 90%;
+  height: 90%;
+  margin: 80px auto;
+  background: #ffffff48;
+  -webkit-box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.253);
+          box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.253);
+  border-radius: 0px 0px 16px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shopping .title {
+  height: 50px;
+  padding: 10px 20px;
+  color: #161616;
+  font-size: 18px;
+}
+
+.shopping .item:nth-child(3) {
+  border-top: 1px solid #bcbdbe;
+  border-bottom: 1px solid #bcbdbe;
+}
+
+.shopping .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 5px;
+  width: 100%;
+  height: 90px;
+}
+
+.shopping .item .buttons {
+  position: relative;
+  width: 10%;
+  padding-top: 10px;
+}
+
+.shopping .item .buttons .bi-trash3-fill {
+  display: inline-block;
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  Cursor: pointer;
+}
+
+.shopping .item .buttons .bi-trash3-fill:hover {
+  color: #c41515;
+}
+
+.shopping .item .image {
+  width: 0px;
+  height: 0px;
+}
+
+.shopping .item .image img {
+  border-radius: 0px;
+  width: 0px;
+  height: 0px;
+}
+
+.shopping .item .description {
+  margin-left: 10px;
+  width: 20%;
+  line-height: 20px;
+}
+
+.shopping .item .description .span {
+  display: block;
+  color: #161616;
+}
+
+.shopping .item .description .nombre-carrito {
+  font-size: 16px;
+}
+
+.shopping .item .description .descripcion-carrito {
+  font-size: 12px;
+}
+
+.shopping .item .quantity {
+  width: 35%;
+  margin-top: 10%;
+  margin-left: 30px;
+}
+
+.shopping .item .quantity input {
+  border: none;
+  text-align: center;
+  color: #161616;
+  width: 25px;
+  font-size: 14px;
+}
+
+.shopping .item button[class*=bi] {
+  border: none;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background-color: #dbdbdb;
+  border-radius: 5px;
+  margin: 2px 0 2px;
+}
+
+.shopping .item .total-price {
+  text-align: center;
+  color: #43484D;
+  width: 10%;
+  font-size: 16px;
+}
+
+.shopping .total {
+  width: 40%;
+  height: 20px;
+  margin-left: 55%;
+}
+
+.shopping .total .total1 {
+  margin-right: 20px;
+}
+
+.shopping .total .total1,
+.shopping .total .total2 {
+  font-size: 16px;
+}
+
+.shopping .direccion {
+  padding: 40px 0 30px;
+  text-align: center;
+  position: relative;
+}
+
+.shopping .direccion .btn-green {
+  border-radius: 16px;
+  margin-bottom: 35px;
+  background-color: #88ca8b;
+}
+
+.shopping .direccion .btn-green:hover {
+  -webkit-box-shadow: 1px 5px 5px #16161636;
+          box-shadow: 1px 5px 5px #16161636;
+  background-color: #4fb954;
+}
+
+.shopping .direccion .btn-orange {
+  border-radius: 12px;
+  border-color: #ff5a28;
+  background-color: #ffffff00;
+}
+
+.shopping .direccion .btn-orange:hover {
+  background-color: transparent;
+  background-color: #ff5a2857;
+}
+
+/*--------------ENVIOS------------ */
+.container-envios {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.container-envios .envios, .container-envios .work {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 8px 8px;
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.container-envios .envios .todo, .container-envios .work .todo {
+  padding: 10px;
+  height: 200px;
+}
+
+.container-envios .envios .todo .image, .container-envios .work .todo .image {
+  border-radius: 16px;
+  background-color: #ffffff;
+  width: 60px;
+  height: 60px;
+  -webkit-box-shadow: 1px 5px 5px #16161644;
+          box-shadow: 1px 5px 5px #16161644;
+}
+
+.container-envios .envios .todo .image img, .container-envios .work .todo .image img {
+  margin: 5px 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.container-envios .envios .todo .info, .container-envios .work .todo .info {
+  width: 75%;
+  height: 140px;
+  float: right;
+  margin-top: -60px;
+  margin-right: -10px;
+}
+
+.container-envios .envios .todo .info h1, .container-envios .work .todo .info h1 {
+  font-size: 20px;
+}
+
+.container-envios .envios .todo .info p, .container-envios .work .todo .info p {
+  font-size: 12px;
+}
+
+.container-envios .envios .todo .info .btn-outline-warning, .container-envios .work .todo .info .btn-outline-warning {
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 35px;
+}
+
+.container-envios .envios .todo .info .btn-outline-warning .bi-arrow-right-short, .container-envios .work .todo .info .btn-outline-warning .bi-arrow-right-short {
+  color: #161616;
+  font-size: 25px;
+}
+
+/*------------POP ENVIOS----------------*/
+.modal-inner-wrap {
+  padding: 10px;
+  margin: 25px auto;
+  margin-bottom: 50px;
+  width: 99%;
+}
+
+.modal-inner-wrap .modal-header {
+  padding: 0px;
+  width: 100%;
+  height: 50px;
+}
+
+.modal-inner-wrap .modal-header .modal-title {
+  font-size: 20px;
+  color: #f0592c;
+}
+
+.modal-inner-wrap .modal-header .modal-title .bi-bicycle {
+  display: none;
+}
+
+.modal-inner-wrap .modal-header .action-close {
+  background-color: #ffffff00;
+  border: none;
+}
+
+.modal-inner-wrap .modal-header .action-close .bi-x-circle {
+  color: #161616;
+  font-size: 20px;
+}
+
+.modal-inner-wrap .modal-header .action-close .bi-x-circle:hover {
+  color: #c41515;
+}
+
+.modal-inner-wrap .modal-content {
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffffbd;
+  padding: 5px;
+  height: 100%;
+}
+
+.modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .label {
+  font-size: 14px;
+}
+
+.modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control {
+  display: inline;
+}
+
+.modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control .input-container {
+  width: 70%;
+}
+
+.modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control .input-container input {
+  width: 100%;
+}
+
+.modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control .submit-container {
+  margin-top: -28px;
+  margin-left: 205px;
+  width: 27%;
+  height: 28px;
+}
+
+.modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control .submit-container button {
+  background-color: #88ca8b;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 4px;
+}
+
+.modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control .submit-container span {
+  font-size: 12px;
+}
+
+.modal-inner-wrap .modal-content .estimation-list {
+  margin-top: 15px;
+}
+
+.modal-inner-wrap .modal-content .estimation-list table thead tr th {
+  text-align: center;
+  font-size: 12px;
+}
+
+.modal-inner-wrap .modal-content .estimation-list tbody tr td {
+  padding: 15px;
+  text-align: center;
+  height: 80px;
+  font-size: 12px;
+}
+
 /*--------------FOOTER------------ */
 .footer-basic {
   padding: 40px;
@@ -654,7 +984,7 @@ header .nav_menu .bi.bi-bag {
   margin-bottom: -20px;
 }
 
-/* -----------FIN FOOTER--------- */
+/*------------MEDIA--------------*/
 @media screen and (min-width: 375px) {
   .nav .bag {
     margin-top: -110px;
@@ -709,6 +1039,9 @@ header .nav_menu .bi.bi-bag {
     width: 90px;
     height: 90px;
   }
+  .modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control .submit-container {
+    margin-left: 240px;
+  }
 }
 
 @media screen and (min-width: 425px) {
@@ -739,6 +1072,12 @@ header .nav_menu .bi.bi-bag {
     border-radius: 12px;
     width: 90px;
     height: 90px;
+  }
+  .modal-inner-wrap {
+    margin-bottom: 80px;
+  }
+  .modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control .submit-container {
+    margin-left: 275px;
   }
 }
 
@@ -829,6 +1168,30 @@ header .nav_menu .bi.bi-bag {
   }
   .opciones .index_cards .index-cards_texto .index-cards_titulo {
     font-size: 18px;
+  }
+  .container-envios .envios .todo .image, .container-envios .work .todo .image {
+    width: 100px;
+    height: 100px;
+  }
+  .container-envios .envios .todo .image img, .container-envios .work .todo .image img {
+    margin: 5px 10px;
+    width: 80px;
+    height: 80px;
+  }
+  .container-envios .envios .todo .info, .container-envios .work .todo .info {
+    height: 130px;
+    margin-top: -90px;
+  }
+  .container-envios .envios .todo .info p, .container-envios .work .todo .info p {
+    font-size: 14px;
+  }
+  .modal-inner-wrap {
+    padding: 10px;
+    margin: 25px auto;
+    width: 70%;
+  }
+  .modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control .submit-container {
+    margin-left: 275px;
   }
 }
 
@@ -925,6 +1288,78 @@ header .nav_menu .bi.bi-bag {
   .paginacion ul li a {
     font-size: 18px;
   }
+  .shopping .item {
+    height: 120px;
+  }
+  .shopping .item .buttons {
+    padding-top: 25px;
+  }
+  .shopping .item .buttons .bi-trash3-fill {
+    margin-left: 30px;
+  }
+  .shopping .item .image {
+    width: 100px;
+    height: 100px;
+  }
+  .shopping .item .image img {
+    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+  }
+  .shopping .item .description {
+    line-height: 30px;
+    width: 15%;
+  }
+  .shopping .item .description .nombre-carrito {
+    font-size: 20px;
+  }
+  .shopping .item .description .descripcion-carrito {
+    font-size: 16px;
+  }
+  .shopping .item .quantity {
+    margin-top: 5%;
+    margin-left: 50px;
+  }
+  .shopping .item .quantity input {
+    font-size: 16px;
+  }
+  .shopping .item .total-price {
+    margin-top: 30px;
+    font-size: 22px;
+  }
+  .shopping .total {
+    margin-left: 500px;
+  }
+  .shopping .total .total1 {
+    margin-right: 20px;
+  }
+  .shopping .total .total1,
+  .shopping .total .total2 {
+    font-size: 22px;
+  }
+  .container-envios .envios .todo .image, .container-envios .work .todo .image {
+    width: 130px;
+    height: 130px;
+  }
+  .container-envios .envios .todo .image img, .container-envios .work .todo .image img {
+    margin: 5px 10px;
+    width: 110px;
+    height: 110px;
+  }
+  .container-envios .envios .todo .info, .container-envios .work .todo .info {
+    height: 150px;
+    margin-top: -110px;
+  }
+  .container-envios .envios .todo .info p, .container-envios .work .todo .info p {
+    font-size: 16px;
+  }
+  .modal-inner-wrap {
+    margin-bottom: 85px;
+    width: 60%;
+  }
+  .modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control .submit-container {
+    margin-left: 305px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -988,6 +1423,36 @@ header .nav_menu .bi.bi-bag {
     margin-top: 50px;
     font-size: 14px;
   }
+  .shopping .total {
+    margin-left: 630px;
+  }
+  .container-envios .envios .todo .image, .container-envios .work .todo .image {
+    width: 180px;
+    height: 150px;
+  }
+  .container-envios .envios .todo .image img, .container-envios .work .todo .image img {
+    margin: 5px 30px;
+    width: 120px;
+    height: 120px;
+  }
+  .container-envios .envios .todo .info, .container-envios .work .todo .info {
+    height: 150px;
+    margin-top: -140px;
+    margin-right: -10px;
+  }
+  .container-envios .envios .todo .info h1, .container-envios .work .todo .info h1 {
+    font-size: 22px;
+  }
+  .container-envios .envios .todo .info p, .container-envios .work .todo .info p {
+    font-size: 16px;
+  }
+  .modal-inner-wrap {
+    margin-bottom: 30px;
+    width: 40%;
+  }
+  .modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control .submit-container {
+    margin-left: 260px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1048,6 +1513,40 @@ header .nav_menu .bi.bi-bag {
   }
   .info .indexinf .indexinf_texto p {
     font-size: 24px;
+  }
+  .shopping .total {
+    margin-left: 750px;
+  }
+  .container-envios {
+    height: 550px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .container-envios .envios .todo .image, .container-envios .work .todo .image {
+    width: 200px;
+  }
+  .container-envios .envios .todo .image img, .container-envios .work .todo .image img {
+    margin: 5px 35px;
+  }
+  .container-envios .envios .todo .info h1, .container-envios .work .todo .info h1 {
+    font-size: 24px;
+  }
+  .container-envios .envios .todo .info p, .container-envios .work .todo .info p {
+    font-size: 18px;
+  }
+  .container-envios .envios .todo .info .btn-outline-warning, .container-envios .work .todo .info .btn-outline-warning {
+    width: 120px;
+    height: 60px;
+  }
+  .container-envios .envios .todo .info .btn-outline-warning .bi-arrow-right-short, .container-envios .work .todo .info .btn-outline-warning .bi-arrow-right-short {
+    font-size: 40px;
+  }
+  .modal-inner-wrap {
+    margin-bottom: 280px;
+    width: 35%;
+  }
+  .modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control .submit-container {
+    margin-left: 295px;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
