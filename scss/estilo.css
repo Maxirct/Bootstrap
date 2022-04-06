@@ -8,10 +8,6 @@
           box-sizing: border-box;
 }
 
-html {
-  height: 100vh;
-}
-
 body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(216, 234, 255, 0.473)), to(rgba(153, 146, 255, 0.445)));
   background: linear-gradient(rgba(216, 234, 255, 0.473), rgba(153, 146, 255, 0.445));
@@ -37,6 +33,11 @@ header .nav_menu {
   margin: 5%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+header .nav_menu img {
+  width: 110px;
+  height: 100px;
 }
 
 header .nav_menu a {
@@ -67,8 +68,20 @@ header .nav_menu .bi.bi-bag {
 
 .nav .bag {
   margin-left: auto;
-  margin-top: -130px;
+  margin-top: -230px;
   font-size: 25px;
+}
+
+.nav .logo {
+  margin-top: -225px;
+  margin-left: 100px;
+  width: 100px;
+  height: 30px;
+}
+
+.nav .logo img {
+  width: 100px;
+  height: 25px;
 }
 
 .nav .bag i:hover {
@@ -242,7 +255,7 @@ header .nav_menu .bi.bi-bag {
 }
 
 .opciones .index_cards .index_cards_img img {
-  margin-left: 12px;
+  margin-left: 10px;
   width: 65px;
   height: 65px;
 }
@@ -985,16 +998,26 @@ header .nav_menu .bi.bi-bag {
 }
 
 /*------------MEDIA--------------*/
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 375px) {
   .nav .bag {
-    margin-top: -115px;
+    margin-top: -184px;
     font-size: 30px;
   }
+  .nav .logo {
+    width: 110px;
+    height: 30px;
+    margin-left: 125px;
+    margin-top: -179px;
+  }
+  .nav .logo img {
+    width: 110px;
+    height: 30px;
+  }
   .opciones .index_cards .index_cards_img img {
-    margin-left: 25px;
+    margin-left: 20px;
   }
   .container .hijo .todo .todo-1 {
-    width: 250px;
+    width: 200px;
   }
   .container .hijo .todo .todo-1 .titulo {
     font-size: 16px;
@@ -1004,7 +1027,7 @@ header .nav_menu .bi.bi-bag {
     font-size: 18px;
   }
   .container .hijo .todo .todo-1 .foto {
-    margin-left: 295px;
+    margin-left: 240px;
     margin-top: -100px;
     width: 90px;
     height: 90px;
@@ -1018,20 +1041,72 @@ header .nav_menu .bi.bi-bag {
     margin-bottom: 80px;
   }
   .modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control .submit-container {
-    margin-left: 275px;
+    margin-left: 240px;
   }
 }
 
-@media screen and (min-width: 600px) {
-  .footer-basic ul {
+@media screen and (min-width: 425px) {
+  .nav .bag {
+    margin-top: -189px;
+  }
+  .nav .logo {
+    width: 110px;
+    height: 30px;
+    margin-left: 150px;
+    margin-top: -185px;
+  }
+  .nav .logo img {
+    width: 110px;
+    height: 30px;
+  }
+  .container .hijo .todo .todo-1 {
+    width: 220px;
+  }
+  .container .hijo .todo .todo-1 .titulo {
     font-size: 18px;
   }
-  .footer-basic .social > a {
-    font-size: 22px;
-  }
-  .footer-basic .copyright {
+  .container .hijo .todo .todo-1 .info {
     font-size: 12px;
   }
+  .container .hijo .todo .todo-1 .precio {
+    margin-top: -5px;
+    font-size: 20px;
+  }
+  .container .hijo .todo .todo-1 .foto {
+    margin-left: 280px;
+    margin-top: -115px;
+    width: 105px;
+    height: 105px;
+  }
+  .container .hijo .todo .todo-1 img {
+    border-radius: 12px;
+    width: 105px;
+    height: 105px;
+  }
+  .medios {
+    padding: 15px;
+  }
+  .medios h3 {
+    font-size: 18px;
+  }
+  .medios .iconos {
+    font-size: 35px;
+  }
+  .medios .bi {
+    padding: 20px;
+  }
+  .opciones .index_cards .index_cards_img img {
+    margin-left: 25px;
+  }
+  .opciones .index_cards .index-cards_texto .index-cards_titulo {
+    font-size: 16px;
+  }
+  .modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control .submit-container {
+    margin-left: 250px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .nav {
     visibility: hidden;
   }
@@ -1051,92 +1126,15 @@ header .nav_menu .bi.bi-bag {
     margin: 5%;
     margin-top: 50px;
   }
+  header .nav_menu img {
+    width: 100px;
+    height: 90px;
+  }
   header .nav_menu a {
     color: #161616;
     font-size: 18px;
     margin-inline: 0.8vh;
   }
-  .container .hijo .todo .todo-1 {
-    width: 340px;
-  }
-  .container .hijo .todo .todo-1 .titulo {
-    font-size: 18px;
-  }
-  .container .hijo .todo .todo-1 .info {
-    font-size: 12px;
-  }
-  .container .hijo .todo .todo-1 .precio {
-    margin-top: -5px;
-    font-size: 20px;
-  }
-  .container .hijo .todo .todo-1 .foto {
-    margin-left: 395px;
-    margin-top: -115px;
-    width: 105px;
-    height: 105px;
-  }
-  .container .hijo .todo .todo-1 img {
-    border-radius: 12px;
-    width: 105px;
-    height: 105px;
-  }
-  .medios {
-    padding: 15px;
-  }
-  .medios h3 {
-    font-size: 24px;
-  }
-  .medios .iconos {
-    font-size: 40px;
-  }
-  .medios .bi {
-    padding: 20px;
-  }
-  .opciones {
-    -ms-grid-rows: 150px;
-        grid-template-rows: 150px;
-    -webkit-column-gap: 4px;
-            column-gap: 4px;
-  }
-  .opciones .index_cards .index_cards_img {
-    width: 100px;
-    height: 100px;
-  }
-  .opciones .index_cards .index_cards_img img {
-    margin-left: 30px;
-    width: 100px;
-    height: 100px;
-  }
-  .opciones .index_cards .index-cards_texto .index-cards_titulo {
-    font-size: 18px;
-  }
-  .container-envios .envios .todo .image, .container-envios .work .todo .image {
-    width: 100px;
-    height: 100px;
-  }
-  .container-envios .envios .todo .image img, .container-envios .work .todo .image img {
-    margin: 5px 10px;
-    width: 80px;
-    height: 80px;
-  }
-  .container-envios .envios .todo .info, .container-envios .work .todo .info {
-    height: 130px;
-    margin-top: -90px;
-  }
-  .container-envios .envios .todo .info p, .container-envios .work .todo .info p {
-    font-size: 14px;
-  }
-  .modal-inner-wrap {
-    padding: 10px;
-    margin: 25px auto;
-    width: 70%;
-  }
-  .modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control .submit-container {
-    margin-left: 275px;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .opciones .index_cards .index_cards_img img {
     margin-left: 60px;
   }
@@ -1178,6 +1176,9 @@ header .nav_menu .bi.bi-bag {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
     grid-area: E;
+  }
+  .container {
+    margin-top: 20px;
   }
   .container .btn-primary {
     z-index: 0;
@@ -1301,12 +1302,31 @@ header .nav_menu .bi.bi-bag {
   .modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control .submit-container {
     margin-left: 305px;
   }
+  .footer-basic ul {
+    font-size: 18px;
+  }
+  .footer-basic .social a {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
+  .footer-basic .copyright {
+    font-size: 14px;
+  }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
+  header .nav_menu img {
+    margin-top: 10px;
+    width: 120px;
+    height: 110px;
+  }
   header .nav_menu a {
     font-size: 20px;
     margin-inline: 1.8vh;
+  }
+  .container {
+    margin-top: 30px;
   }
   .container .row .base .input-group .form-control {
     font-size: 20px;
@@ -1343,7 +1363,7 @@ header .nav_menu .bi.bi-bag {
     margin-top: 0;
   }
   .footer-basic {
-    height: 200px;
+    height: 220px;
   }
   .footer-basic ul {
     font-size: 20px;
@@ -1396,16 +1416,20 @@ header .nav_menu .bi.bi-bag {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1900px) {
   header .nav_menu {
     margin-top: 70px;
+  }
+  header .nav_menu img {
+    width: 170px;
+    height: 150px;
   }
   header .nav_menu a {
     font-size: 25px;
     margin-inline: 2.5vh;
   }
   .container {
-    margin-top: 50px;
+    margin-top: 80px;
   }
   .container .row .base .input-group .form-control {
     font-size: 25px;
@@ -1422,7 +1446,7 @@ header .nav_menu .bi.bi-bag {
     font-size: 18px;
   }
   .container .row .base .hijo .todo .todo-1 .foto {
-    margin-left: 365px;
+    margin-left: 450px;
   }
   .container .row .base .hijo .todo .todo-1 .precio {
     font-size: 30px;
@@ -1444,7 +1468,7 @@ header .nav_menu .bi.bi-bag {
     height: 180px;
   }
   .opciones .index_cards .index_cards_img img {
-    margin-left: 95px;
+    margin-left: 120px;
     width: 180px;
     height: 180px;
   }
@@ -1453,10 +1477,10 @@ header .nav_menu .bi.bi-bag {
     font-size: 25px;
   }
   .info .indexinf .indexinf_texto p {
-    font-size: 24px;
+    font-size: 32px;
   }
   .shopping .total {
-    margin-left: 750px;
+    margin-left: 1160px;
   }
   .container-envios {
     height: 550px;
@@ -1483,11 +1507,32 @@ header .nav_menu .bi.bi-bag {
     font-size: 40px;
   }
   .modal-inner-wrap {
-    margin-bottom: 280px;
-    width: 35%;
+    margin-top: 80px;
+  }
+  .modal-inner-wrap .modal-header .modal-title {
+    font-size: 20px;
+  }
+  .modal-inner-wrap .modal-header .action-close .bi-x-circle {
+    font-size: 20px;
+  }
+  .modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .label {
+    font-size: 24px;
   }
   .modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control .submit-container {
-    margin-left: 295px;
+    margin-left: 520px;
+  }
+  .modal-inner-wrap .modal-content .estimator-content .estimator-form form .field .required .control .submit-container span {
+    font-size: 16px;
+  }
+  .modal-inner-wrap .modal-content .estimation-list {
+    margin-top: 30px;
+  }
+  .modal-inner-wrap .modal-content .estimation-list table thead tr th {
+    font-size: 20px;
+  }
+  .modal-inner-wrap .modal-content .estimation-list tbody tr td {
+    padding: 30px;
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
